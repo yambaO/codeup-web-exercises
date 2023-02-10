@@ -138,14 +138,14 @@ to get the values,
 how real world conditions can be represented with code.
  */
 
-// amount spent for the movies
+// amount spent for the movies3
 let mermaidMovie = 3;
 let bearMovie = 5;
 let herculesMovie = 1;
 let pricePerDay = 3;
 let total = (mermaidMovie * pricePerDay) + (bearMovie * pricePerDay) + (herculesMovie * pricePerDay);
-console.log("The amount spent is : " +  "$" +total); // amount spent is 27;
-console.log(`The price per day for each movie is ${pricePerDay}.
+
+console.log3(`The price per day for each movie is ${pricePerDay}.
 The totale number of the days for each movie is ${mermaidMovie + bearMovie + herculesMovie}.
 `)
 
