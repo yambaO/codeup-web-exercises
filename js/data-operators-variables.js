@@ -115,7 +115,9 @@ console.log((sample + " Students")); // Hello Codeup Students
 
 
 // Replace "Students" with " class"
-console.log(sample + " Class");
+let sampleJoin = "Hello Codeup Students"
+sampleJoin = sampleJoin.replace("Students", "Class");
+console.log(sampleJoin);
 
 // Find the index of "C" using .indexof
 console.log(sample.indexOf("c"));
@@ -143,6 +145,9 @@ let herculesMovie = 1;
 let pricePerDay = 3;
 let total = (mermaidMovie * pricePerDay) + (bearMovie * pricePerDay) + (herculesMovie * pricePerDay);
 console.log("The amount spent is : " +  "$" +total); // amount spent is 27;
+console.log(`The price per day for each movie is ${pricePerDay}.
+The totale number of the days for each movie is ${mermaidMovie + bearMovie + herculesMovie}.
+`)
 
 // payment received per week
 
@@ -154,6 +159,7 @@ let hourGoogle = 6;
 let hourFacebook = 10;
 let paymentTotal = (payRateAmazon * hoursAmazon) + (payRateFacebook * hourFacebook) + (payRateGoogle + hourGoogle);
  console.log("Payment received for the week  is : " +"$" +  paymentTotal);
+ console.log(`The total salary received is $${paymentTotal}`);
 
  // Student registration
 
@@ -163,6 +169,13 @@ let classConflict = false;
   console.log("Registration is open")
 else console.log("registration is closed")
 
+console.log("===================== Alternative==================")
+ let scheduleConflict = false;
+let maxClassSize = 30;
+let currentClassSize = 24;
+let canEnroll = !scheduleConflict && (currentClassSize < maxClassSize);
+console.log(canEnroll);
+
 // product membership
 
 let numberOfItem =  1;
@@ -171,6 +184,14 @@ if (numberOfItem > 2 && offerNotexpired === true)
  console.log("Premium members do not need to buy a specific amount of products")
 else
  console.log("you are not a premium member");
+
+console.log("====================Alternative=================")
+let minCartSize = 2;
+let cartSize = 3;
+let premiumMember = false;
+let offerExpired = false;
+let canOfferApply = (premiumMember || (cartSize >= minCartSize)) && !offerExpired;
+console.log(canOfferApply);
 
 // Use the following code to follow the instructions
 
@@ -182,7 +203,7 @@ let passwordCharNum = password.length >= 5 ;
 console.log( passwordCharNum)
 
  //the password must not  include the userName
-let userNameNot = username.indexOf(username) >= 0
+let userNameNot = username.indexOf(username) >= 0; // username.indexOf(username) = -1
 console.log(userNameNot);
 
 // user name not more than 20 charater
@@ -193,3 +214,13 @@ console.log(userName20char);
 let userBlankSpace = username.indexOf(" ") >= 0;
 let passwordBlankSpace = password.indexOf(" ") >= 0;
 console.log(userBlankSpace , passwordBlankSpace)
+
+console.log("==================Alternative====================");
+let userLength = username.length;
+let passLength = password.length;
+let firstCharUser = username.substring(0,1);
+let lastCharUser = username.substring((userLength - 1), userLength);
+let firstCharPass = password.substring(0,1);
+let lastCharPass = password.substring((passLength - 1), passLength);
+let hasWhiteSpace = firstCharUser === ' ' || lastCharUser === ' ' || firstCharPass === " " || lastCharPass === ' ';
+console.log(hasWhiteSpace);
