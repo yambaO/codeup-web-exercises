@@ -163,3 +163,33 @@ let classConflict = false;
   console.log("Registration is open")
 else console.log("registration is closed")
 
+// product membership
+
+let numberOfItem =  1;
+let offerNotexpired = true;
+if (numberOfItem > 2 && offerNotexpired === true)
+ console.log("Premium members do not need to buy a specific amount of products")
+else
+ console.log("you are not a premium member");
+
+// Use the following code to follow the instructions
+
+let username = 'codeup';
+let  password = 'notastrongpassword';
+
+//the password must be at least 5 characters
+let passwordCharNum = password.length >= 5 ;
+console.log( passwordCharNum)
+
+ //the password must not  include the userName
+let userNameNot = username.indexOf(username) >= 0
+console.log(userNameNot);
+
+// user name not more than 20 charater
+let userName20char = username.length <= 20;
+console.log(userName20char);
+
+//neither the username or password can start or end with whitespace
+let userBlankSpace = username.indexOf(" ") >= 0;
+let passwordBlankSpace = password.indexOf(" ") >= 0;
+console.log(userBlankSpace , passwordBlankSpace)
