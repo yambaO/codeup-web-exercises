@@ -16,13 +16,16 @@ console.log(`Great, ${didConfirm} is my favorite color too`);
 
 //
 // amount spent for the movies
-let mermaidMovie = prompt("How many days did you rented The little mermaid  movie? ");
-let bearMovie =prompt("How many days did you rented The Brother Bear  movie? ") ;
-let herculesMovie = prompt('How many days did you rented The hercule movie?  ');
-let pricePerDay = prompt("What is the price per day");
+let mermaidMovie = prompt("How many days did you rent The little mermaid  movie? ");
+let bearMovie =prompt("How many days did you rent The Brother Bear  movie? ") ;
+let herculesMovie = prompt('How many days did you rent The hercule movie?  ');
+let pricePerDay = prompt("What is the cost per day");
 let total = (parseInt(bearMovie) + (parseInt(herculesMovie)) + parseInt(mermaidMovie)) *  parseInt(pricePerDay);
 
-alert("The amount spent is : " +  "$" + total); // amount spent is 27;
+alert("The total cost for the rental : " +  "$" + total.toLocaleString('en-US', {
+    style: 'currency',
+    currency: 'USD',
+}));
 console.log("The amount spent is : " +  "$" +total); // amount spent is 27;
 
 let payRateAmazon = prompt('Please provide the pay rate for amazon employer');
@@ -46,14 +49,14 @@ let scheduleConflict = false;
 let maxClassSize = prompt('What is the max size of the class?');
 let currentClassSize = prompt(`What is the current class size?`);
 let canEnroll = !scheduleConflict && (currentClassSize < maxClassSize);
-alert("You can enroll for the class");
+alert(`It is ${canEnroll} that the student can enroll in class`);
 
 
 let minCartSize = 2;
 let cartSize = prompt("How many product did you buy ?")
-let premiumMember = false;
-let offerExpired = false;
+let premiumMember = confirm("Please confirm that you are a premium member?");
+let offerExpired = confirm("Please confirm if the offer still valid");
 let canOfferApply = (premiumMember || (cartSize >= minCartSize)) && !offerExpired;
 console.log(canOfferApply);
-alert("You qualified for product offer")
+alert(`It is ${canOfferApply} that the offer does apply`);
 
