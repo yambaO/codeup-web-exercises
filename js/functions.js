@@ -37,7 +37,7 @@ console.log(helloMessage);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+let  random = Math.floor((Math.random() * 3) + 1);
 console.log(`The generated random number is : ${random}`);
 /**
  * TODO:
@@ -77,12 +77,22 @@ console.log(`The result is : ${isTwocheck}`);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-const calculateTip = (tipPercentage, totalBill) =>{
-    let amountToTip = tipPercentage * totalBill;
-    return amountToTip;
-}
-let tip = calculateTip(0.20, 20);
-console.log(`You received a tip of $${tip}`);
+// const calculateTip = (tipPercentage, totalBill) =>{
+//     let amountToTip = tipPercentage * totalBill;
+//     return amountToTip.toFixed(2);
+// }
+// let tip = calculateTip(0.20, 20);
+//
+// console.log(`You received a tip of $${tip}`);
+
+// console.log("===================================correction==================================");
+// const calculateTip =(tipPercentage, totalBill) =>{
+// let tipPercentageNum = parseFloat(tipPercentage);
+// let amountTip = (tipPercentageNum / 100) *  billTotalNum;
+// return amountTip;
+// }
+// let tipAmount = calculateTip(15, 100);
+// console.log(`The amount you should tip is : ${tipAmount.toLocaleString('en-US', { style: 'currency', currency: 'USD'})}
 
 /**
  * TODO:
@@ -92,15 +102,15 @@ console.log(`You received a tip of $${tip}`);
  */
 
 // const calculateTip = (tipPercentage, totalBill) =>{
-//     totalBill = parseFloat(prompt('What is the total on the bill?'));
+//     totalBill = parseFloat(prompt();
 //     alert(`You entered $${totalBill}`);
-//     tipPercentage = parseFloat(prompt("Please enter the tip percentage"));
+//     tipPercentage = parseFloat(prompt(""));
 //     alert(`You entered  percentage of : ${tipPercentage}`);
 //     let amountTip = tipPercentage * totalBill;
 //     return amountTip;
 // }
-// let tip = calculateTip(0.20, 20);
-// alert(`You received a tip of $${tip}`);
+let total = calculateTip(prompt('What is the total on the bill?'),prompt('Please enter the percentage'));
+alert(`You received a tip of $${total}`);
 
 
 /**
@@ -118,9 +128,9 @@ console.log(`You received a tip of $${tip}`);
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 const applyDiscount = (price, discountPercentage) => {
-    let result = price * discountPercentage;
+    let result = parseFloat(price) - (parseFloat(price) * parseFloat(discountPercentage)) ;
     return result;
 }
 
 let discount = applyDiscount(100, 0.2)
-console.log(`You received a discount of $${discount}`);
+console.log(`The price after the discount receiving a discount is  $${discount}`);
