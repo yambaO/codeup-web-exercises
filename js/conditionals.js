@@ -49,8 +49,8 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
@@ -69,16 +69,16 @@ const analyzeColor = (input) => {
         switch (input) {
             case"red":
                 return `Strawberries are ${input}`;
-                break;
+                // break;
             case"green":
                 return `Apple are  ${input}`;
-                break;
+                // break;
             case"blue":
                 return `The sky is ${input}`;
-                break;
+                // break;
             default:
                 return `I don't know anything about ${input}`;
-                break;
+                // break;
         }
     } else {
         return "This is not a string";
@@ -100,6 +100,9 @@ console.log(analyzeColor(1));
 let alertColor = (analyzeColor(prompt('Please enter a color')));
 alert(alertColor);
 
+// Alternative
+// const alertColor =prompt("Please enter a color");
+//alert(alertColor.toLowerCase());
 
 /* ########################################################################## */
 
@@ -163,7 +166,7 @@ console.log(calculateTotal(5, 100))
 //Generate a random number between 0 and 6
 let luckyNumber = Math.floor(Math.random() * 6);
 let priceBeforeDiscount = parseFloat(prompt('Please enter the price before discount?'));
-alert(`Your lucky number was : ${luckyNumber} ,  your price before discount was: $${priceBeforeDiscount}  and the price after discount is : $${calculateTotal(luckyNumber, priceBeforeDiscount)}`);
+alert(`Your lucky number was : ${luckyNumber} ,  your price before discount was: ${formatAsCurrency(priceBeforeDiscount)}  and the price after discount is : $${calculateTotal(luckyNumber, priceBeforeDiscount)}`);
 
 
 /**
@@ -214,4 +217,12 @@ if (userPromptNumber) {
 else{
     let cancelAction = "You cancelled !!"
     alert(cancelAction);
+}
+
+function getNumber(){
+    const wantsToEnterNumber = confirm("would you like to enter a number?");
+    if (wantsToEnterNumber){
+        return parseFloat(prompt("Enter the number"));
+    }
+    return false;
 }
