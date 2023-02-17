@@ -26,6 +26,8 @@
     console.log(`The third name is : ${names[2]}`);
     console.log(`The fourth name is : ${names[3]}`);
 
+
+
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
@@ -58,25 +60,40 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
  console.log("========================= Function accepting arrays=============================")
-    let firstElement = [1,2,3,4,5];
-    const displayFirstArrayElement = (secondArray)=>{
-        return firstElement[0];
+    // let firstElement = [1,2,3,4,5];
+    // const displayFirstArrayElement = (secondArray)=>{
+    //     return firstElement[0];
+    // }
+    // ;
+    // console.log(`The first element in the array is: ${displayFirstArrayElement(firstElement)}`);
+    //
+    // let secondElement = [1,2,3,4,5];
+    // const displaySecondArrayElement = (secondArray)=>{
+    //         return secondElement[1];
+    //     }
+    // ;
+    // console.log(`The second element in the array is: ${displaySecondArrayElement(secondElement)}`);
+    //
+    // let lastElement = [1,2,3,4,5];
+    // const displayLastArrayElement = (lastElement)=>{
+    //         return lastElement[4];
+    //     }
+    // ;
+    // console.log(`The last element in the array is: ${displayLastArrayElement(lastElement)}`);
+
+    const returnFirst = (array) =>{
+     return array[0];
     }
-    ;
-    console.log(`The first element in the array is: ${displayFirstArrayElement(firstElement)}`);
+    console.log(returnFirst(names));
 
-    let secondElement = [1,2,3,4,5];
-    const displaySecondArrayElement = (secondArray)=>{
-            return secondElement[1];
-        }
-    ;
-    console.log(`The second element in the array is: ${displaySecondArrayElement(secondElement)}`);
+    const returnSecond = (array) =>{
+        return array[1];
+    }
+    console.log(returnSecond(names));
 
-    let lastElement = [1,2,3,4,5];
-    const displayLastArrayElement = (lastElement)=>{
-            return lastElement[4];
-        }
-    ;
-    console.log(`The last element in the array is: ${displayLastArrayElement(lastElement)}`);
+    const returnLast = (array) =>{
+        return array[array.length -1];
+    }
+    console.log(returnLast(names));
 
 })();
