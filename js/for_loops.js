@@ -3,14 +3,27 @@
 Create a function named showMultiplicationTable that accepts a number and console.
 logs the multiplication table for that number (just multiply by the numbers 1 through 10)
  */
+ //
+ // const showMultiplicationTable = (number) =>{
+ //     for(let i = 1; i <= 10; i++){
+ //         console.log(`${number} * ${i} = ${number * i}`)
+ //     }
+ // }
+ // showMultiplicationTable(7);
+ // showMultiplicationTable(5);
 
+//alternative solution
  const showMultiplicationTable = (number) =>{
-     for(let i = 1; i <= 10; i++){
-         console.log(`${number} * ${i} = ${number * i}`)
-     }
- }
- showMultiplicationTable(7);
- showMultiplicationTable(5);
+     let table ='';
+    for(let i = 1; i <= 10; i++){
+        let doMath = parseInt(number)* i;
+        let output = `${number} X ${i} = ${doMath}\n;`
+        table = table + output;
+    }
+    return table;
+}
+let sevenTable = showMultiplicationTable(7);
+console.log(sevenTable);
 
 /*
 Use a for loop and the code from the previous lessons to generate 10 random numbers
@@ -39,15 +52,20 @@ Create a for loop that uses console.log to create the output shown below.
 88888888
 999999999
  */
+//
+// for(let i = 1; i < 10; i++){
+//    let varName = "";
+//     for(let j = 1; j <= i; j++){
+//         varName += i;
+//     }
+//     console.log(varName);
+// }
 
-for(let i = 1; i < 10; i++){
-   let varName = "";
-    for(let j = 1; j <= i; j++){
-        varName += i;
-    }
-    console.log(varName);
+// alternative solution
+for (let i = 1; i < 10; i++){
+    let output = `${i}`.repeat(i);
+    console.log(output);
 }
-
 /*
 Create a for loop that uses console.log to create the output shown below.
 100

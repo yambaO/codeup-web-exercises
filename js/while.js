@@ -5,9 +5,13 @@ Create a while loop that uses
 console.log() to create the output shown below.
  */
 
-let i = 2;
-while (i <= 20){
-    console.log( i*i);
+let i = 1;
+let multipliedBy = 2;
+let accumulator = 0;
+while (i <= 16){
+    let result = accumulator * multipliedBy;
+    accumulator +=
+    console.log( i*2);
     i++;
 }
 
@@ -20,20 +24,38 @@ Use a do-while loop to log to the console the amount
  of cones sold to each person. The below code shows how to get the random numbers for this exercise.or(Math.random() * 50) + 50;
  */
 
-let  allCones = Math.floor(Math.random() * 50) + 50;
-console.log(`Amount of cones to sell are : ${allCones}`)
-do {
-    let conesSold= Math.floor(Math.random() * 5) + 1;
-    if(conesSold >= allCones){
-        console.log(`Cannot sell you ${conesSold} cones I only have ${allCones}`);
+// let  allCones = Math.floor(Math.random() * 50) + 50;
+// console.log(`Amount of cones to sell are : ${allCones}`)
+// do {
+//     let conesSold= Math.floor(Math.random() * 5) + 1;
+//     if(conesSold > allCones){
+//         console.log(`Cannot sell you ${conesSold} cones I only have ${allCones}`);
+//
+//     }else if (allCones > conesSold){
+//         console.log(`${conesSold} cones sold`);
+//
+//     }else if (allCones === 0) {
+//         console.log(`Yay! I sold them all`);
+//     }
+//     allCones -= conesSold;
+//
+// } while (allCones > 0 );
 
-    }else if (allCones > conesSold){
-        console.log(`${conesSold} cones sold`);
-        
-    }
-    else {
-        console.log(`Yay! I sold them all`);
-    }
-    allCones -= conesSold;
+// right answer
 
-} while (allCones > 0 );
+
+let conesInventory = randomNumber(50,100);
+do{
+    let conesWanted = randomNumber(1,5);
+    if(conesWanted > conesInventory){
+        console.log(`Cannot sell you ${conesWanted}, I only have ${conesInventory}`);
+        console.log(`${conesInventory} sold...`);
+        conesInventory = 0;
+    }else{
+        console.log(`${conesWanted} sold.....`);
+        conesInventory = conesInventory - conesWanted;
+    }
+    console.log(`${conesInventory} left`);
+
+  }  while(conesInventory > 0);
+  console.log("Yay! I've sold them all!")
