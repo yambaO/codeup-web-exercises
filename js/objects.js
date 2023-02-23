@@ -12,14 +12,14 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    // const person = {
-    //     firstName : "Rick",
-    //     lastName : "Sanchez",
-    //
-    // }
-    //
-    // console.log(person.firstName);
-    // console.log(person.lastName);
+    const person = {
+        firstName : "Rick",
+        lastName : "Sanchez",
+
+    }
+
+    console.log(person.firstName);
+    console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -30,14 +30,20 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    const person = {
-        firstName : "Rick",
-        lastName : "Sanchez",
-    sayHello: function () {
-    return `Hello from ${person.firstName} ${person.lastName}!`;
+    // const person = {
+    //     firstName : "Rick",
+    //     lastName : "Sanchez",
+    // sayHello: function() {
+    // return `Hello from ${person.firstName} ${person.lastName}!`;
+    // }
+    // }
+    // console.log(person.sayHello());
+
+    // Alternative
+    person.sayHello = function(){
+        return `Hello, ${this.firstName} ${this.lastName}`;
     }
-    }
-    console.log(person.sayHello());
+     console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -59,13 +65,20 @@
         {name: 'George', amount: 320}
     ];
 
-    shoppers.forEach(function(shopper) {
-        if (shopper.amount > 200) {
-            console.log(`${shopper.name} has to spend $${shopper.amount - (shopper.amount * 0.12)}`);
-        } else {
-            console.log(`${shopper.name} has to spend $${shopper.amount}`);
-        }
-    });
+    // shoppers.forEach(function(shopper) {
+    //     if (shopper.amount > 200) {
+    //         console.log(`${shopper.name} has to spend $${shopper.amount - (shopper.amount * 0.12)}`);
+    //     } else {
+    //         console.log(`${shopper.name} has to spend $${shopper.amount}`);
+    //     }
+    // });
+
+    //alternative
+    // shoppers.forEach(shopper =>{
+    //     const discount = shopper.amount > 200 ? shopper.amount * .12 : 0;
+    //     const total = shopper.amount - discount;
+    //     console.log(`${shopper.name}-- total: ${formatAsCurrency(shopper.amount)}, discount : ${formatAsCurrency()}, final total :$ `)
+    // })
 
 
     /** TODO:

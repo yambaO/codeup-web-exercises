@@ -11,6 +11,9 @@ function isNumericAndNotNaN(input){
     return !isNaN(parseFloat(input)) && input !== null && typeof input!== 'boolean' && typeof input !== "string";
 }
 
+function isNumericAndNotString (input){
+    return !isNaN(parseFloat(input)) && input !== null && typeof input!== 'boolean'
+}
 function randomNumber(min, max){
     return  Math.floor(Math.random() * (max - min + 1) + min);
 }
