@@ -1,0 +1,16 @@
+/*p {*/
+/*    color: #c43612;*/
+/*    text-transform:uppercase;*/
+/*}*/
+
+.red-paragragh{
+        color: #c43612;
+        text-transform:capitalize;
+}
+ #paragrah1 {
+        font-style: italic;
+ }
+ .red-paragragh.smaller-font {
+     font-size: 10px;
+ }
+
