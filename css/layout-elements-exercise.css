@@ -1,0 +1,53 @@
+.button-style {
+    background-color: #838383;
+    color: white;
+    border: white;
+    border-radius: 5px;
+}
+header.container {
+    height: 100px;
+    border-bottom: 1px solid #000;
+    border-bottom-color: #e0d8d8ff;
+}
+.container.hero-scene {
+    height: 80vh;
+    background-color: #d7d7d7;
+}
+
+.hero-text {
+    gap:31px;
+}
+.hero-text h2 {
+    font-size: 60px;
+    line-height: 60px;
+}
+.space-icon-text{
+    gap: 31px;
+}
+.hero-subtitle {
+    font-size:25px ;
+}
+ .hero-square img{
+
+     border-radius: 5px ;
+}
+
+.feature-card {
+
+    border-radius: 10px;
+    padding: 40px;
+    transition: all ease .3s;
+}
+
+.feature-circle img {
+    background: gray;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+
+}
+
+.feature-circle p {
+    align-self: center;
+}
