@@ -3,91 +3,91 @@
 //
 // Functions using conditionals but not loops or arrays:
 // - Make a function named `isOdd(number)`
-
-console.log('=========isOdd=================')
-const isOdd = (number) => {
-
-    return parseFloat(number) % 2 != 0 ;
- }
- console.log(isOdd(2))
-console.log(isOdd(3));
-console.log(isOdd("string"));
-console.log(isOdd(true))
-console.log(isOdd(2));
-console.log(isOdd(null))
-
-console.log('================isGreater=========')
+//
+// console.log('=========isOdd=================')
+// const isOdd = (number) => {
+//
+//     return parseFloat(number) % 2 != 0 ;
+//  }
+//  console.log(isOdd(2))
+// console.log(isOdd(3));
+// console.log(isOdd("string"));
+// console.log(isOdd(true))
+// console.log(isOdd(2));
+// console.log(isOdd(null))
+//
+// console.log('================isGreater=========')
 // isGreater function
- const isGreater = (number1, number2) => {
-    return parseFloat(number1) > parseFloat(number2);
- }
- console.log(isGreater(9.3, 7.4));
-console.log(isGreater(3.14, 3.14))          // false
-console.log(isGreater(7.4, 9.3)  )          // false
-console.log(isGreater(-9.3, 7.4) )          // false
-console.log(isGreater(-3.14, 3.14))         // false
-console.log(isGreater(-7.4, 9.3) )          // false
-console.log(isGreater(9.3, -7.4) )          // true
-console.log(isGreater(3.14, -3.14))         // true
-console.log(isGreater(7.4, -9.3) )          // true
-console.log(isGreater(-9.3, -7.4))          // false
-console.log(isGreater(-7.4, -9.3))          // true
-console.log(isGreater(null, null))          // false
-console.log(isGreater('Seven', 'e)ight') )   // false
-
-console.log(`========================= isNot==========`)
-
-const isNot = (booleanValue)=> {
-    return !booleanValue;
-}
-console.log(isNot(false))            // true
-console.log(isNot(true))             // false
-console.log(isNot("Bob"))            // false
-console.log(isNot(null) )           // false
-
-console.log('=======isEven======');
-//- Make a function named `isEven(number)`
- const isEven = (number ) =>{
-
-    return parseFloat(number) % 2 === 0;
- }
- console.log(isEven(3));
- console.log(isEven("string"));
- console.log(isEven(true))
-console.log(isEven(2));
- console.log(isEven(null))
-
-console.log("====function named identity==============")
+//  const isGreater = (number1, number2) => {
+//     return parseFloat(number1) > parseFloat(number2);
+//  }
+//  console.log(isGreater(9.3, 7.4));
+// console.log(isGreater(3.14, 3.14))          // false
+// console.log(isGreater(7.4, 9.3)  )          // false
+// console.log(isGreater(-9.3, 7.4) )          // false
+// console.log(isGreater(-3.14, 3.14))         // false
+// console.log(isGreater(-7.4, 9.3) )          // false
+// console.log(isGreater(9.3, -7.4) )          // true
+// console.log(isGreater(3.14, -3.14))         // true
+// console.log(isGreater(7.4, -9.3) )          // true
+// console.log(isGreater(-9.3, -7.4))          // false
+// console.log(isGreater(-7.4, -9.3))          // true
+// console.log(isGreater(null, null))          // false
+// console.log(isGreater('Seven', 'e)ight') )   // false
+//
+// console.log(`========================= isNot==========`)
+//
+// const isNot = (booleanValue)=> {
+//     return !booleanValue;
+// }
+// console.log(isNot(false))            // true
+// console.log(isNot(true))             // false
+// console.log(isNot("Bob"))            // false
+// console.log(isNot(null) )           // false
+//
+// console.log('=======isEven======');
+// //- Make a function named `isEven(number)`
+//  const isEven = (number ) =>{
+//
+//     return parseFloat(number) % 2 === 0;
+//  }
+//  console.log(isEven(3));
+//  console.log(isEven("string"));
+//  console.log(isEven(true))
+// console.log(isEven(2));
+//  console.log(isEven(null))
+//
+// console.log("====function named identity==============")
 // - Make a function named `identity(input)` that returns the input exactly as
 // provided.
-const identity = (input)=>{
-     return input;
-}
-console.log(identity(2));
- console.log(identity("Brook"));
-
-console.log("====isFive==============")
-// - Make a function named `isFive(input)`
-const isFive = (input)=>{
-    return input === 5;
-}
-console.log(isFive("henry"))
-console.log((isFive(5)));
-console.log((isFive(true)));
-console.log(isFive("5"));
+// const identity = (input)=>{
+//      return input;
+// }
+// console.log(identity(2));
+//  consonsole.log((isFive(true)));
+// console.log(isFive("5"));le.log(identity("Brook"));
+//
+// console.log("====isFive==============")
+// // - Make a function named `isFive(input)`
+// const isFive = (input)=>{
+//     return input === 5;
+// }
+// console.log(isFive("henry"))
+// console.log((isFive(5)));
+// co
 
 // - Make a function named `addFive(input)` that adds five to some input.
-
-console.log("========isMultiple=====================")
+//
+// console.log("========isMultiple=====================")
 // - Make a function named `isMultipleOf(target, n)` which checks if target is
 // evenly divisible by `n`
-const isMulptipleOf = (target , n ) =>{
-    if(target % n === 0){ return true }
-    else{return false};
-}
-console.log(isMulptipleOf(9,2))
-console.log((isMulptipleOf(4,2)))
-console.log((isMulptipleOf(2,7)))
+// const isMulptipleOf = (target , n ) =>{
+//     if(target % n === 0){ return true }
+//     else{return false};
+// }
+// console.log(isMulptipleOf(9,2))
+// console.log((isMulptipleOf(4,2)))
+// console.log((isMulptipleOf(2,7)))
 
 
 // - Make a function named `isTrue(boolean)`
@@ -108,10 +108,10 @@ console.log((isMulptipleOf(2,7)))
 // - Make a function named `notZero(input)` that returns true if the input is not
 // zero
 // - Write a function named `lowerCase(string)`
-const lowerCase = (input)=> {
-    return input.toLowerCase();
-}
-console.log(lowerCase("heLLO"))
+// const lowerCase = (input)=> {
+//     return input.toLowerCase();
+// }
+// console.log(lowerCase("heLLO"))
 
 // - Write a function named `double(n)` that returns a number times two
 // - Write a function named `triple(n)` that returns a number times 3
@@ -264,3 +264,117 @@ console.log(lowerCase("heLLO"))
 // password and the user is at least 18 years old. If the user is an admin,
 //     they do not have to be a certain age but the password must still not match
 // the username.
+
+/**
+ * Convert Address to Object
+ * Write a function named convertAddressToObject that accepts a string that contains a street number (as a string) and street name separated by a space characters, and returns an object with properties streetNumber and streetName.
+ *
+ * Examples
+ *
+ * >> convertAddressToObject('8646 Sunny Oaks') ➞ {streetNumber: '8646', streetName: 'Sunny Oaks'}
+ * >> convertAddressToObject('5408 Villa Nueva') ➞ {streetNumber: '5408', streetName: 'Villa Nueva'}
+ **/
+
+// const convertAddressToObject = (address)=> {
+//     const objectAddress = {
+//         streetNumber : address,
+//         streetName : address,
+//     }
+//     return objectAddress.streetNumber && objectAddress.address
+// }
+//
+// convertAddressToObject("8646 Sunny Oaks")
+// console.log(objectAddress.streetNumber)
+
+const convertAddressToObject = (address)=> {
+    const [streetNumber, ...streetNameArray] = address.split(' ');
+    const streetName = streetNameArray.join(' ');
+    const objectAddress = {
+        streetNumber: streetNumber,
+        streetName: streetName,
+    }
+    return objectAddress;
+}
+
+const objectAddress = convertAddressToObject("8646 Sunny Oaks");
+console.log(`streetNumber: ${objectAddress.streetNumber}, streetName: ${ objectAddress.streetName}`);
+
+
+/**
+ * Count total pets
+ * Write a function named totalPets that accepts an array of objects where each object represents a person, and has a 'pets' property for their owned pets. The function should return the sum of every object's numPets property.
+ *
+ * Examples
+ *
+ * >> totalPets([
+ *       {name: 'Fernando Mendoza', pets: 1},
+ *       {name: 'Douglas Hirsh', pets: 8},
+ *       {name: 'Kenneth Howell', pets: 2}
+ *    ]) ➞ 11
+ */
+
+const people =[
+    {name: 'Fernando Mendoza', pets: 1},
+    {name: 'Douglas Hirsh', pets: 8},
+    {name: 'Kenneth Howell', pets: 2}
+];
+function totalPets(personArray){
+    //set up accumulator variable
+    let total = 0;
+    // loop over the array, adding to
+    personArray.forEach(person =>{
+        total += person.pets
+    });
+    return total;
+}
+
+
+
+/**
+ * Find the Smallest and Biggest Numbers
+ * Create a function named minMax that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+ *
+ * Examples
+ * >> minMax([1, 2, 3, 4, 5]) ➞ [1, 5]
+ * >> minMax([2334454, 5]) ➞ [5, 2334454]
+ * >> minMax([1]) ➞ [1, 1]
+ *
+ * Notes
+ * All test arrays will have at least one element and are valid.
+ */
+
+
+/**
+ * Drink Sorting
+ * You will be given an array of drinks, with each drink being an object with two properties: name and price.
+ * Create a function named sortDrinkByPrice that has the drinks array as an argument and return the drinks objects sorted by price in ascending order.
+ *
+ * Assume that the following array of drink objects needs to be sorted:
+ * drinks = [
+ *     {name: "lemonade", price: 50},
+ *     {name: "lime", price: 10}
+ * ]
+ *
+ * Examples
+ * >> sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
+ */
+
+
+
+/**
+ * Get Sum of People's Budget
+ * Create the function named getBudgets that takes an array with objects and returns the sum of people's budgets.
+ *
+ * Examples
+ *
+ * >> getBudgets([
+ *        { name: "John", age: 21, budget: 23000 },
+ *        { name: "Steve",  age: 32, budget: 40000 },
+ *        { name: "Martin",  age: 16, budget: 2700 }
+ *    ]) ➞ 65700
+ * >> getBudgets([
+ *        { name: "John",  age: 21, budget: 29000 },
+ *        { name: "Steve",  age: 32, budget: 32000 },
+ *        { name: "Martin",  age: 16, budget: 1600 }
+ *    ]) ➞ 62600
+ */

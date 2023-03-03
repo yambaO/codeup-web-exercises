@@ -68,6 +68,9 @@
 .row.no-padding {
     padding: unset;
 }
+.row.grow{
+    flex: 1 0 0;
+}
 .row.no-gap {
     gap: unset;
 }
@@ -85,7 +88,7 @@
 }
 /* Combo classes to extend the column's versatility */
 .column.shrink {
-    flex: 0 1 80px;
+    flex: 0 1 auto;
 }
 .column.text-center {
     text-align: center;
