@@ -343,6 +343,27 @@ function totalPets(personArray){
  * All test arrays will have at least one element and are valid.
  */
 
+// const arrayOfNumber = [1, 3, 5,9,6,10]
+//
+// const minMax = (numbers) => {
+//     let max = numbers[0];
+//     let min = numbers[0];
+//
+//     numbers.forEach(number => {
+//         if (number > max) {
+//             max = number;
+//         }
+//
+//         if (number < min) {
+//             min = number;
+//         }
+//     });
+//
+//     return [min, max];
+// }
+//
+// console.log(minMax(arrayOfNumber)); // Output: [1, 10]
+
 
 /**
  * Drink Sorting
