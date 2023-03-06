@@ -1,0 +1,30 @@
+
+fieldset {
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+input[type="password"] {
+    margin-left: 1px;
+}
+
+.submit-button{
+    background-color: #3cc03c;
+    border-radius: 5px;
+    color: black;
+    border: #838383;
+;
+}
+.column-seperator {
+    gap:20px;
+    text-align: match-parent;
+}
+body {
+    font-family: sans-serif;
+
+}
+
+h1{
+    color: white;
+    background-color: #16b216;
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+<div class=" page-wrapper">
+    <div class="container grow justify-center align-center">
+<div class="row">
+    <div class="column align-center justify-center">
+        <form method="post" action="https://request-inspector.glitch.me">
+            <div class="row">
+                <div class="column align-center justify-center">
+                    <h1>Veridian Dynamic Registration </h1>
+                </div>
+            </div>
+            <fieldset>
+                <legend><h4>Log In</h4></legend>
+                <div class="row">
+                    <div class="column justify-center align-center column-seperator">
+                        <div class="input-wrapper">
+                            <label for="username">Email:</label>
+                            <input type="text" id="username" name="username">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><h4><label for="comments">Bio:</label></h4></legend>
+                <textarea name="comments" id="comments" cols="48" rows="10"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend><h4>How did you hear about us ?</h4></legend>
+                <div class="input-wrapper">
+                    <input type="checkbox" name="radio-button" value="radio advertisement" id="radio advertisement">
+                    <label for="radio advertisement">radio advertisement</label>
+                </div>
+                <div class="input-wrapper">
+                    <input type="checkbox" name="radio-button" value="internet advertisement" id="internet advertisement">
+                    <label for="internet advertisement">internet advertisement</label>
+                </div>
+                <div class="input-wrapper">
+                    <input type="checkbox" name="radio-button" value="other" id="other">
+                    <label for="other">other</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><h4><label for="browser">What browser are you using ?</label></h4></legend>
+                <select name="browser" id="browser">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Mozilla Firefox">Mozilla Firefox</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Opera">Opera</option>
+                </select>
+            </fieldset>
+            <div class="row justify-center">
+                <input type="submit" value="Submit form" class="submit-button">
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

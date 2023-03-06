@@ -10,8 +10,12 @@ body,h1, h2, h3, h4, h5, h6 ,p {
 .left-sidebar {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
+/*.left-sidebar:hover a  {*/
+/*    transform: scale(1.1);*/
+/*    background-color: #838383;*/
+/*}*/
 .right-sidebar {
     display: flex;
     flex-direction: column;
@@ -69,6 +73,7 @@ body,h1, h2, h3, h4, h5, h6 ,p {
     transform: scale(1.1);
 
 }
+
 .full-width {
     width: 300px;
     height: 30px;
@@ -88,4 +93,9 @@ body,h1, h2, h3, h4, h5, h6 ,p {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.button-hover a:hover{
+    background-color: #838383;
+
 }
