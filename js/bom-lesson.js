@@ -3,18 +3,21 @@ let count = 0;
 let max = 10;
 let interval = 1000;
 
-// let intervalId = setInterval(function() {
+// let intervalId = setInterval(function(){
 //     if (count >= max) {
 //         clearInterval(intervalId);
-//         console.log('All done')
+//         console.log('All Done!');
 //     } else {
 //         count++;
-//         console.log('Repeating this line' + count);
+//         console.log('Repeating this line ' + count);
 //     }
-//     ;
-//
-//     },interval);
+// }, interval);
 
-setTimeout(function(){
-    console.log("It's been 5 seconds!");
-}, 5000);
+// console.log('5 seconds starts now!');
+// setTimeout(function(){
+//     console.log("It's been 5 seconds!");
+// }, 5000);
+//
+// setTimeout(function() {
+//     window.location.href = 'https://google.com';
+// }, 10000);
