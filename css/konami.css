@@ -1,0 +1,43 @@
+
+h1, p {
+    font-family: sans-serif;
+
+}
+h1{
+    font-size: 30px;
+}
+body {
+    color: #444;
+    font: normal 16px Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.code {
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #bbb;
+    border-bottom: 4px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 1px 0 0 #efefef inset, -1px 0 0 #efefef inset;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 1px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    background: #ccc;
+    justify-content: center;
+    align-items: center;
+}
+
+.key-row {
+    display: flex;
+    flex-direction: row;
+}
+.key-button {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
