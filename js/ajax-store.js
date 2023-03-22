@@ -23,8 +23,11 @@ const getInventory = async () => {
       <td>${item.categories.join(', ')}</td>
     `;
     });
-})();
+
 
 const refreshButton = document.querySelector('#refreshButton');
-refreshButton.addEventListener('click', updateTable);
-updateTable();
+refreshButton.addEventListener('click', async function(){
+    document.querySelector("#insertProducts").innerHTML = " ";
+    let inventory = await getInventory();
+});
+})();

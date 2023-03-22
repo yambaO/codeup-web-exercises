@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox Lecture</title>
+    <script src="js/keys.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mapbox-lesson.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="container">
+        <h1>Mapbox</h1>
+        <div id='map' style='width: 50%; height: 400px;'></div>
+    </div>
+</div>
+<script>
+    mapboxgl.accessToken =MAPBOX_API_TOKEN;
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-98.48962, 29.42692], // starting position [lng, lat]
+        zoom: 15, // starting zoom
+    });
+</script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+</body>
+</html>
