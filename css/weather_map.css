@@ -1,0 +1,155 @@
+
+.page-wrapper {
+    background-color: #214AAB;
+    font-family: sans-serif;
+
+
+}
+
+h1, h2, h3, p, span, div {
+    color: white;
+    font-weight: bold;
+}
+.search-container {
+align-items: flex-start;
+}
+
+.search-wrapper {
+    background-color: #214AAB;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+input {
+    all: unset;
+    font: 20px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+}
+::placeholder {
+    color: #fff;
+    opacity: 0.7;
+
+
+}
+button {
+    all: unset;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+svg {
+    color: #fff;
+    fill: currentColor;
+    width: 60px;
+    height: 60px;
+}
+
+
+.left-column {
+
+    background: #214AAB;
+    row-gap: 20px;
+    position: relative;
+    flex: 0 0 600px;
+    border-width: 0px;
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+}
+.right-column {
+    position: relative;
+    background: #214AAB;
+    overflow: hidden;
+
+}
+
+.wrapper-grid {
+
+    background-color: #214AAB;
+    color: white;
+    opacity: 50%;
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.icon-wrapper {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.card {
+    padding: 20px;
+    color: white;
+}
+
+#map {
+    border-radius: 5px;
+}
+.large-weather-icon {
+
+    width: 200px;
+    height: 150px;
+}
+.small-weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.left-header-temperature {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    font-size: 2rem;
+    gap: 20px;
+}
+.right-header-temperature {
+    display: grid;
+    width: 50%;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+ .label {
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: 20px;
+ }
+ .icon-wrapper {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:left;
+     gap: 5px;
+
+
+ }
+.icon-weather-news{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}

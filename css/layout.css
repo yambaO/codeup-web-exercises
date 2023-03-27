@@ -99,6 +99,7 @@
 .column.align-center {
     align-items: center;
 }
+
 .column.align-right {
     align-items: end;
 }
